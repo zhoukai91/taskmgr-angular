@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import { MatSidenavModule } from '@angular/material'
+import { MatButtonModule } from '@angular/material'
 
 @NgModule({
   declarations: [
@@ -13,7 +13,7 @@ import { MatSidenavModule } from '@angular/material'
   imports: [
     BrowserModule,
     CoreModule,
-    MatSidenavModule
+    MatButtonModule
    
   ],
   providers: [],
