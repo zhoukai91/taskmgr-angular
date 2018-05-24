@@ -8,7 +8,7 @@ import { AppRoutingModule } from './app-routing.module'
 import { LoginModule } from './login/login.module'
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatSidenavModule } from '@angular/material';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -16,11 +16,11 @@ import { MatSidenavModule } from '@angular/material';
   ],
   imports: [
     BrowserModule,
-    CoreModule,
-    AppRoutingModule,
-    LoginModule,
     BrowserAnimationsModule,
-    MatSidenavModule,
+    SharedModule,
+    AppRoutingModule,
+    CoreModule,
+    LoginModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
