@@ -1,17 +1,15 @@
-<mat-sidenav-container>
-  <mat-sidenav #sidenav>
+<mat-sidenav-container [hasBackdrop]="unset">
+  <mat-sidenav #sidenav mode="side">
     <nav>
         <app-sidebar></app-sidebar>
     </nav>
   </mat-sidenav>
-<!-- <mat-sidenav-content>
-  main
-</mat-sidenav-content> -->
   <div class="site">
       <header>
         <app-header (toggle)="sidenav.toggle()"></app-header>
       </header>
       <main>
+        <router-outlet></router-outlet>
       </main>
       <footer>
         <app-footer></app-footer>

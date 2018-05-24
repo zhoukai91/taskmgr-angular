@@ -1,14 +1,16 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { MatToolbarModule } from '@angular/material'
+import { SharedModule } from '../shared/shared.module';
+import { MatButtonModule, MatToolbarModule, MatIconModule } from '@angular/material'
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   imports: [
-    CommonModule,
-    MatToolbarModule
+    SharedModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   declarations: [
     HeaderComponent,

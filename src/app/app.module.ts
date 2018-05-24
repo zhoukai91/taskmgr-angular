@@ -4,7 +4,10 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module'
+import { LoginModule } from './login/login.module'
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSidenavModule } from '@angular/material';
 
 @NgModule({
@@ -14,6 +17,8 @@ import { MatSidenavModule } from '@angular/material';
   imports: [
     BrowserModule,
     CoreModule,
+    AppRoutingModule,
+    LoginModule,
     BrowserAnimationsModule,
     MatSidenavModule,
   ],
