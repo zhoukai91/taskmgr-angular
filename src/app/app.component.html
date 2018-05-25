@@ -6,7 +6,7 @@
   </mat-sidenav>
   <div class="site">
       <header>
-        <app-header (toggle)="sidenav.toggle()"></app-header>
+        <app-header (toggle)="sidenav.toggle()" (toggleDarkTheme)="changeTheme($event)"></app-header>
       </header>
       <main>
         <router-outlet></router-outlet>
