@@ -1,0 +1,32 @@
+<form>
+  <mat-card>
+    <mat-card-title>
+      <p>注册</p>
+    </mat-card-title>
+    <mat-card-content>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="电子邮件" type="text">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="您的名字" type="password">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <input matInput placeholder="您的名字" type="password">
+      </mat-form-field>
+      <button mat-raised-button type="button">注册</button>
+    </mat-card-content>
+    <mat-card-actions>
+      <p>有帐号？ <a>点击登陆</a></p>
+      <p>忘记密码？ <a>找回密码</a></p>
+    </mat-card-actions>
+    <!-- <mat-grid-list cols="6" rowHeight="200px">
+      <mat-grid-tile
+          *ngFor="let tile of tiles"
+          [colspan]="tile.cols"
+          [rowspan]="tile.rows"
+          [style.background]="tile.color">
+        {{tile.text}}
+      </mat-grid-tile>
+    </mat-grid-list> -->
+  </mat-card>
+</form>
